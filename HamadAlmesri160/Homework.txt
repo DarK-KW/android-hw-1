@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+import java.lang.*;
+
+class Main
+{
+
+
+  public static void main (String args[])
+  {
+
+
+
+    Scanner Hi = new Scanner (System.in);
+
+      System.out.println ("Hello There !!");
+
+      System.out.println ("Welcome To Grade Calculator!!");
+
+      System.out.println ("What's your name ??");
+
+
+    String name = Hi.nextLine ();
+
+      System.out.println ("Welcome , " + name);
+
+      System.out.println ("What's your grade ??");
+
+    String grade = Hi.nextLine ();
+
+    int grade1 = Integer.parseInt (grade);
+
+      newgrade (grade1);
+
+
+  }
+  public static void newgrade (int grade)
+  {
+
+
+    if (grade > 90)
+      {
+          
+	System.out.println ("Congrats You Got A");
+
+      }
+      if  (grade > 80){
+          System.out.println("Congrats You Got B");
+      }
+      if  (grade > 70){
+          System.out.println("Congrats You Got C");
+      }
+      if  (grade > 60){
+          System.out.println("Congrats You Got D");
+      }
+      if  (grade < 60){
+          System.out.println("Congrats You Got F");
+      }
+      
+
+
+
+  }
+
+
+
+
+}
